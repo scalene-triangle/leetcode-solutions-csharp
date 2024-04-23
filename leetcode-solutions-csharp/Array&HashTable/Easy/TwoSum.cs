@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace leetcode_solutions_csharp.Array_HashTable.Easy
 {
-	public class TwoSum
+    /**
+	 * 1. Two Sum
+	 */
+
+    public class TwoSum
 	{
 		public void Run()
 		{

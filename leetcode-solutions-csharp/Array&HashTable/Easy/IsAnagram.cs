@@ -8,8 +8,8 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace leetcode_solutions_csharp.Array_HashTable.Easy
 {
 	/**
-		* 242, Valid Anagram
-		*/
+	 * 242。 Valid Anagram
+	 */
 
 	/**
 	 * "b" is string but 'b' is char
