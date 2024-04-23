@@ -6,8 +6,8 @@ namespace leetcode_solutions_csharp
     {
         static void Main(string[] args)
         {
-            ContainsDuplicate containsDuplicate = new ContainsDuplicate();
-            containsDuplicate.Run();
+            IsAnagram isAnagram = new IsAnagram();
+            isAnagram.Run();
             Console.WriteLine("Press any key to exit...");
         }
     }
