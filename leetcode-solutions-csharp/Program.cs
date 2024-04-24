@@ -1,4 +1,5 @@
 ﻿using leetcode_solutions_csharp.Array_HashTable.Easy;
+using leetcode_solutions_csharp.TwoPointers.Easy;
 
 namespace leetcode_solutions_csharp
 {
@@ -6,8 +7,8 @@ namespace leetcode_solutions_csharp
     {
         static void Main(string[] args)
         {
-            IsAnagram isAnagram = new IsAnagram();
-            isAnagram.Run();
+            IsPalindrome isPalindrome = new IsPalindrome();
+            isPalindrome.Run();
             Console.WriteLine("Press any key to exit...");
         }
     }
