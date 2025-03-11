@@ -1,4 +1,6 @@
-﻿using System;
+﻿using leetcode_solutions_csharp.Utils.Helpers;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
@@ -17,9 +19,9 @@ namespace leetcode_solutions_csharp.Array_HashTable.Medium
             var result1 = Solution(new string[] { "eat", "tea", "tan", "ate", "nat", "bat" });
             var result2 = Solution(new string[] { "" });
             var result3 = Solution(new string[] { "a" });
-            Console.WriteLine(NestedListToString(result1)); // [["bat"],["nat","tan"],["ate","eat","tea"]]
-            Console.WriteLine(NestedListToString(result2)); // [[""]]
-            Console.WriteLine(NestedListToString(result3)); // [["a"]]
+            Console.WriteLine(ToStringHelper.NestedListToString(result1)); // [["bat"],["nat","tan"],["ate","eat","tea"]]
+            Console.WriteLine(ToStringHelper.NestedListToString(result2)); // [[""]]
+            Console.WriteLine(ToStringHelper.NestedListToString(result3)); // [["a"]]
         }
 
         public IList<IList<string>> Solution(string[] strs)
@@ -41,26 +43,6 @@ namespace leetcode_solutions_csharp.Array_HashTable.Medium
             }
             var result = anagrams.Values.ToList();
             return result;
-        }
-
-        static string NestedListToString(IList<IList<string>> nestedList)
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.Append("[");
-            foreach (var innerList in nestedList)
-            {
-                sb.Append("[");
-                foreach (var item in innerList)
-                {
-                    sb.AppendFormat("\"{0}\",", item);
-                }
-                sb.Length--;
-                sb.Append("],");
-            }
-            sb.Length--;
-            sb.Append("]");
-
-            return sb.ToString();
         }
     }
 }
