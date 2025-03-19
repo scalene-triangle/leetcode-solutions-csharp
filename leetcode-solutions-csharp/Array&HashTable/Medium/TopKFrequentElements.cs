@@ -10,7 +10,10 @@ namespace leetcode_solutions_csharp.Array_HashTable.Medium;
 public class TopKFrequentElements
 {
     /*
-     * 347. Top K Frequent Elements - https://leetcode.com/problems/top-k-frequent-elements/description/
+     347. Top K Frequent Elements - https://leetcode.com/problems/top-k-frequent-elements/description/
+     Given an integer array nums and an integer k, return the k most frequent elements within the array.
+     The test cases are generated such that the answer is always unique.
+     You may return the output in any order.
      */
     public void Run()
     {
