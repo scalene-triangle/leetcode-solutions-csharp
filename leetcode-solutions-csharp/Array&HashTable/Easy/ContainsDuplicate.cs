@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace leetcode_solutions_csharp.Array_HashTable.Easy;
 
-namespace leetcode_solutions_csharp.Array_HashTable.Easy
+public class ContainsDuplicate
 {
-  /**
-   * 217. Contains Duplicate
-   * Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
-   */
+    /**
+    * 217. Contains Duplicate
+    * Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+    */
 
-  public class ContainsDuplicate
-  {
     public void Run()
     {
       Console.WriteLine(Solution(new int[] { 1, 2, 3, 1 })); // true
@@ -36,5 +30,4 @@ namespace leetcode_solutions_csharp.Array_HashTable.Easy
 
       return false;
     }
-  }
 }
