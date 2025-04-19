@@ -40,7 +40,6 @@ public class MinStack
         minStack.Top();    // return 0
         minStack.GetMin(); // return -2
 
-        // todo: log the result of each step
         Console.WriteLine(ToStringHelper.NestedListToString(minStack));
     }
 
