@@ -38,4 +38,28 @@ public class ToStringHelper
 			sb.Append(item);
 		}
 	}
+
+	public static string TreeNodeToString(TreeNode root)
+	{
+		if (root == null)
+		{
+			return "[]";
+		}
+
+		var queue = new Queue<TreeNode>();
+		queue.Enqueue(root);
+
+		var result = new List<int>();
+
+		while (queue.Count > 0)
+		{
+			var node = queue.Dequeue();
+			result.Add(node.val);
+
+			if (node.left != null) queue.Enqueue(node.left);
+			if (node.right != null) queue.Enqueue(node.right);
+		}
+
+		return "[" + string.Join(",", result) + "]";
+	}
 }
