@@ -14,9 +14,9 @@ public class DailyTemperatures
         var input1 = new int[] { 73, 74, 75, 71, 69, 72, 76, 73 };
         var input2 = new int[] { 30, 40, 50, 60 };
         var input3 = new int[] { 30, 60, 90 };
-        Console.WriteLine(ToStringHelper.NestedListToString(Solution(input1))); // [1,1,4,2,1,1,0,0]
-        Console.WriteLine(ToStringHelper.NestedListToString(Solution(input2))); // [1,1,1,0]
-        Console.WriteLine(ToStringHelper.NestedListToString(Solution(input3))); // [1,1,0]
+        Console.WriteLine(PrintHelper.PrintNestedList(Solution(input1))); // [1,1,4,2,1,1,0,0]
+        Console.WriteLine(PrintHelper.PrintNestedList(Solution(input2))); // [1,1,1,0]
+        Console.WriteLine(PrintHelper.PrintNestedList(Solution(input3))); // [1,1,0]
     }
 
     public int[] Solution(int[] temps)

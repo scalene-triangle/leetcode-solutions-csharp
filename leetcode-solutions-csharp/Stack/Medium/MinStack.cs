@@ -40,7 +40,7 @@ public class MinStack
         minStack.Top();    // return 0
         minStack.GetMin(); // return -2
 
-        Console.WriteLine(ToStringHelper.NestedListToString(minStack));
+        Console.WriteLine(PrintHelper.PrintNestedList(minStack));
     }
 
     Stack<(int val, int minVal)> stack;

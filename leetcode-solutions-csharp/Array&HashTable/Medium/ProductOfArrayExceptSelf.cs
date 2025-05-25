@@ -13,10 +13,10 @@ public class ProductOfArrayExceptSelf
 
     public void Run()
     {
-        Console.WriteLine(ToStringHelper.NestedListToString(Solution(new int[] { 1, 2, 3, 4 }))); // [24,12,8,6]
-        Console.WriteLine(ToStringHelper.NestedListToString(Solution(new int[] { -1, 1, 0, -3, 3 }))); // [0,0,9,0,0]
-        Console.WriteLine(ToStringHelper.NestedListToString(Solution(new int[] { -1, 0, 1, 2, 3 }))); // [0,-6,0,0,0]
-        Console.WriteLine(ToStringHelper.NestedListToString(Solution(new int[] { 1, 2, 4, 6 }))); // [48,24,12,8]
+        Console.WriteLine(PrintHelper.PrintNestedList(Solution(new int[] { 1, 2, 3, 4 }))); // [24,12,8,6]
+        Console.WriteLine(PrintHelper.PrintNestedList(Solution(new int[] { -1, 1, 0, -3, 3 }))); // [0,0,9,0,0]
+        Console.WriteLine(PrintHelper.PrintNestedList(Solution(new int[] { -1, 0, 1, 2, 3 }))); // [0,-6,0,0,0]
+        Console.WriteLine(PrintHelper.PrintNestedList(Solution(new int[] { 1, 2, 4, 6 }))); // [48,24,12,8]
     }
 
     public int[] Solution(int[] nums)

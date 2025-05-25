@@ -15,12 +15,12 @@ public class Encode_DecodeStrings
         List<string> decoded1 = Decode(encoded1);
 
         Console.WriteLine(encoded1);
-        Console.WriteLine(ToStringHelper.NestedListToString(decoded1));
+        Console.WriteLine(PrintHelper.PrintNestedList(decoded1));
 
         var encoded2 = Encode(new List<string> { "we", "say", ":", "yes" });
         List<string> decoded2 = Decode(encoded2);
         Console.WriteLine(encoded2);
-        Console.WriteLine(ToStringHelper.NestedListToString(decoded2));
+        Console.WriteLine(PrintHelper.PrintNestedList(decoded2));
     }
 
     public string Encode(IList<string> strs)

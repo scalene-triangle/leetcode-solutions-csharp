@@ -13,9 +13,9 @@ public class GroupAnagrams
         var result1 = Solution(new string[] { "eat", "tea", "tan", "ate", "nat", "bat" });
         var result2 = Solution(new string[] { "" });
         var result3 = Solution(new string[] { "a" });
-        Console.WriteLine(ToStringHelper.NestedListToString(result1)); // [["bat"],["nat","tan"],["ate","eat","tea"]]
-        Console.WriteLine(ToStringHelper.NestedListToString(result2)); // [[""]]
-        Console.WriteLine(ToStringHelper.NestedListToString(result3)); // [["a"]]
+        Console.WriteLine(PrintHelper.PrintNestedList(result1)); // [["bat"],["nat","tan"],["ate","eat","tea"]]
+        Console.WriteLine(PrintHelper.PrintNestedList(result2)); // [[""]]
+        Console.WriteLine(PrintHelper.PrintNestedList(result3)); // [["a"]]
     }
 
     public IList<IList<string>> Solution(string[] strs)

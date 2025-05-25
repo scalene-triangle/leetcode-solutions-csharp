@@ -11,8 +11,8 @@ public class GenerateParentheses
 
     public void Run()
     {
-        Console.WriteLine(ToStringHelper.NestedListToString(Solution(3))); // ["((()))","(()())","(())()","()(())","()()()"]
-        Console.WriteLine(ToStringHelper.NestedListToString(Solution(1))); // ["()"]
+        Console.WriteLine(PrintHelper.PrintNestedList(Solution(3))); // ["((()))","(()())","(())()","()(())","()()()"]
+        Console.WriteLine(PrintHelper.PrintNestedList(Solution(1))); // ["()"]
     }
 
     public IList<string> Solution(int n)

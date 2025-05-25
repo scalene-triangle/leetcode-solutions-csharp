@@ -15,8 +15,8 @@ public class TopKFrequentElements
         var result1 = Solution(new int[] { 1, 1, 1, 2, 2, 3 }, 2);
         var result2 = Solution(new int[] { 1 }, 1);
 
-        Console.WriteLine(ToStringHelper.NestedListToString(result1)); // [1, 2]
-        Console.WriteLine(ToStringHelper.NestedListToString(result2)); // [1]
+        Console.WriteLine(PrintHelper.PrintNestedList(result1)); // [1, 2]
+        Console.WriteLine(PrintHelper.PrintNestedList(result2)); // [1]
     }
 
     public int[] Solution(int[] nums, int k)
