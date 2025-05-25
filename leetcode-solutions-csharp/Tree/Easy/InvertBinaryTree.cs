@@ -43,21 +43,21 @@ public class InvertBinaryTree
 
 		var result1 = Solution(root1);
 
-		Console.WriteLine(ToStringHelper.TreeNodeToString(result1)); // [4,7,2,9,6,3,1]
+		Console.WriteLine(PrintHelper.PrintTreeNode(result1)); // [4,7,2,9,6,3,1]
 	}
 
-	public class TreeNode
-	{
-		public int val;
-		public TreeNode left;
-		public TreeNode right;
-		public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
-		{
-			this.val = val;
-			this.left = left;
-			this.right = right;
-		}
-	}
+	//public class TreeNode
+	//{
+	//	public int val;
+	//	public TreeNode left;
+	//	public TreeNode right;
+	//	public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
+	//	{
+	//		this.val = val;
+	//		this.left = left;
+	//		this.right = right;
+	//	}
+	//}
 
 	public TreeNode Solution(TreeNode root)
 	{
