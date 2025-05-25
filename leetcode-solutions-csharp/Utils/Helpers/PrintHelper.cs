@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using leetcode_solutions_csharp.Tree.Easy;
+using System.Collections;
 using System.Text;
+using static leetcode_solutions_csharp.LinkedList.Easy.ReverseLinkedListI;
 namespace leetcode_solutions_csharp.Utils.Helpers;
 
-public class ToStringHelper
+public class PrintHelper
 {
-	public static string NestedListToString(object nestedList)
+	public static string PrintNestedList(object nestedList)
 	{
 		StringBuilder sb = new StringBuilder();
 		BuildNestedString(nestedList, sb);
@@ -39,7 +41,7 @@ public class ToStringHelper
 		}
 	}
 
-	public static string TreeNodeToString(TreeNode root)
+	public static string PrintTreeNode(TreeNode root)
 	{
 		if (root == null)
 		{
@@ -62,4 +64,15 @@ public class ToStringHelper
 
 		return "[" + string.Join(",", result) + "]";
 	}
+
+    public static string PrintList(ListNode head)
+    {
+        List<int> values = new List<int>();
+        while (head != null)
+        {
+            values.Add(head.val);
+            head = head.next;
+        }
+		return ("[" + string.Join(",", values) + "]");
+    }
 }
